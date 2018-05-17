@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cliqshots Photography Official Website ">
+        <meta name="keywords" content="Photography, Graphic Designs, Web Development">
 
         <title>Cliqzshots</title>
 
@@ -31,7 +33,7 @@
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -46,6 +48,14 @@
         <h3 class="text-center display-5"><strong>PHOTOGRAPHY IS THE BEAUTY OF LIFE CAPTURED</strong></h3>
       </div><!-- carousel caption -->
     </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/img/bg4.jpg" alt="Second slide">
+       <div class="carousel-caption d-md-block">
+        <h3 class="text-center display-5"><strong>ALWAYS THE BEST</strong></h3>
+      </div><!-- carousel caption -->
+    </div>
+
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
