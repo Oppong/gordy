@@ -19,10 +19,10 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-bold">Cliqzshots</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">About</a>
-        <a class="p-2 text-dark" href="#">Portfolio</a>
-        <a class="p-2 text-dark" href="#">Book Us</a>
+        <a class="p-2 text-dark" href="#home">Home</a>
+        <a class="p-2 text-dark" href="#about">About</a>
+        <a class="p-2 text-dark" href="#portfolio">Portfolio</a>
+        <a class="p-2 text-dark" href="#bookus">Book Us</a>
       </nav>
       <!--<a class="btn btn-outline-primary" href="#">Sign up</a>-->
     </div>
@@ -57,7 +57,8 @@
   </a>
 </div>
 
- <div class="container mt-5">
+<section id="home">
+    <div class="container mt-5">
     <div class="row mt-4">
         <div class="col-12 col-md-6 mt-5 show-left">
             <h3 class="font-weight-normal pb-2">Photography</h3>
@@ -71,9 +72,10 @@
         </div>
     </div><!-- end of row -->
  </div><!-- end of container -->
-
-
- <div class="container-fluid  mt-5" style="padding: 0">
+</section>
+ 
+ <section id="about">
+      <div class="container-fluid  mt-5" style="padding: 0">
        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -86,9 +88,11 @@
             </div>
     </div><!-- end of carousel -->
  </div>
-       
+ </section>
 
-<div class="container ">
+
+<section id="portfolio">
+    <div class="container ">
     <div class="row">
 
         <div class="text-center col-12 mt-5">
@@ -132,9 +136,11 @@
         </div>
     </div><!-- end of row -->
 </div>
+</section>      
 
 
-<div class="container">
+<section id="bookus">
+    <div class="container">
     <div class="row">
         <div class="text-center col-12 mt-5">
             <h3 class="font-weight-normal pb-2 mt-5">Book Us</h3>
@@ -153,6 +159,8 @@
         </div>
     </div><!--end of row -->
 </div>
+
+</section>
 
 
 
@@ -253,5 +261,24 @@
 
 
         </script>
+
+            <script>
+        
+            $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
     </body>
 </html>
